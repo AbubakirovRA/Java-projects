@@ -28,13 +28,12 @@ public class task1 {
         int b = arr[0];
         double a = arr[1];
         double count = 1;
-        String str = "";
         if (a == 0 && b == 0) {
-            return str = "неопределенность или 1";
+            return "неопределенность или 1";
         } else if (a == 0) {
-            return str = Double.toString(a);
+            return Double.toString(a);
         } else if (a == 1) {
-            return str = Double.toString(a);
+            return Double.toString(a);
         }
         if (b < 0) {
             b = -b;
@@ -50,7 +49,7 @@ public class task1 {
                 a *= a;
             }
         }
-        return str = Double.toString(count);
+        return Double.toString(count);
         // return String.format("(%s, %s)", b, a); - возврат кортежа значений
     }
 
