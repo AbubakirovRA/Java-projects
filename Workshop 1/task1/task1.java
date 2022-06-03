@@ -27,7 +27,7 @@ public class task1 {
         int[] arr = separator(args);
         int b = arr[0];
         double a = arr[1];
-        double count = 1;
+        double result = 1;
         if (a == 0 && b == 0) {
             return "неопределенность или 1";
         } else if (a == 0) {
@@ -45,11 +45,11 @@ public class task1 {
                 a *= a;
             } else {
                 b = (b - 1) / 2;
-                count *= a;
+                result *= a;
                 a *= a;
             }
         }
-        return Double.toString(count);
+        return Double.toString(result);
         // return String.format("(%s, %s)", b, a); - возврат кортежа значений
     }
 
