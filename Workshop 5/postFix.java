@@ -8,7 +8,7 @@ import java.util.Stack;
 public class postFix {
 
     public static void main(String[] args) {
-        String str = "( 2 ^ 3 * ( 10 / ( 5 - 3 ) ) ) ^ ( Sin ( Pi ) )";
+        String str = "3 2 - 5 2 / 9 + *";
         String[] strArr = str.split(" ");
         System.out.println(evalRPN(strArr));
     }
