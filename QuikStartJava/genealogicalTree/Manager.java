@@ -1,5 +1,5 @@
-package genealogicalTree;
+// package genealogicalTree;
 
-public class Manager {
+// public class Manager {
     
-}
+// }
