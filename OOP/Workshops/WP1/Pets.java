@@ -1,5 +1,3 @@
-package OOP;
-
 public class Pets {
     protected String name;
 

@@ -1,5 +1,3 @@
-package OOP;
-
 import java.util.ArrayList;
 
 public class Person {
@@ -7,7 +5,7 @@ public class Person {
     private ArrayList<Item> items;
 
     /**
-     * Коструктов человека =)
+     * Коструктор человека =)
      * 
      * @param firstName - имя человека
      * @param items     - предметы что есть у человека, по умолчанию пусто
