@@ -6,10 +6,7 @@ public class Person implements Comparable<Person> {
     public int age;
     public int salary;
 
-    public Person(String firstName,
-            String lastName,
-            int age,
-            int salary) {
+    public Person(String firstName, String lastName, int age, int salary) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
