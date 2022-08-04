@@ -4,11 +4,11 @@ public class User {
     private int id;
     private String login;
     private Status status;
-    private static int count = 1;
+    private static int flag = 1;
 
     public User(String login){
         this.login = login;
-        id = count++;
+        id = flag++;
     }
 
     public int getId(){

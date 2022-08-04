@@ -3,16 +3,16 @@ package OOP.Workshops.WP5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChatRoom extends Chat implements Message {
+public class Rooms extends Chat implements Message {
     private List<User> users;
     private List<String> messages;
-    private String chatName;
+    private String chatId;
 
-    public ChatRoom(String chatName){
-        this.chatName = chatName;
+    public Rooms(String chatId){
+        this.chatId = chatId;
         users = new ArrayList<>();
         messages = new ArrayList<>();
-        chatRooms.add(this);
+        Rooms.add(this);
     }
 
     public List<User> getUsers(){
@@ -27,9 +27,9 @@ public class ChatRoom extends Chat implements Message {
     void appendToChat(User user){
         users.add(user);
         if (users.size() == 1) {
-            user.setStatus(Status.ADMIN);
+            user.setStatus(Status.Admin);
         } else {
-            user.setStatus(Status.MEMBER);
+            user.setStatus(Status.Member);
         }
     }
     
@@ -45,7 +45,7 @@ public class ChatRoom extends Chat implements Message {
      * @param status2
      */
     public void deleteUser(User status1, User status2) {
-        if(status1.getStatus() == Status.ADMIN) {
+        if(status1.getStatus() == Status.Admin) {
             users.remove(status2);
         } else {
             System.out.println("Нет прав на данное действие");
@@ -58,9 +58,9 @@ public class ChatRoom extends Chat implements Message {
      * @param status2
      */
     public void changeModerator(User status1, User status2) {
-        if(status1.getStatus() == Status.ADMIN) {
-            status1.setStatus(Status.MEMBER);
-            status2.setStatus(Status.ADMIN);
+        if(status1.getStatus() == Status.Admin) {
+            status1.setStatus(Status.Member);
+            status2.setStatus(Status.Admin);
         } else {
             System.out.println("Нет прав на данное действие");
         }

@@ -1,8 +1,8 @@
 package OOP.Workshops.WP5;
 
-public class Program {
+public class Enter {
     public static void main(String[] args) {
-        ChatRoom chat = new ChatRoom("Чат");
+        Rooms chat = new Rooms("Чат");
         User user1 = new User("Рустем");
         User user2 = new User("Сергей");
         User user3 = new User("Владимир");
