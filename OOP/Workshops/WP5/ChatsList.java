@@ -5,6 +5,6 @@ import java.util.List;
 /**
  * Список чатов
  */
-public class Messenger {
+public class ChatsList {
     List<Chat> chats = new ArrayList<>();
 }

@@ -2,12 +2,12 @@ package OOP.Workshops.WP5;
 
 public class User {
     private int id;
-    private String login;
+    public String name;
     private Status status;
     private static int flag = 1;
 
-    public User(String login){
-        this.login = login;
+    public User(String name){
+        this.name = name;
         id = flag++;
     }
 
@@ -16,7 +16,7 @@ public class User {
     }
 
     public String getLogin(){
-        return login;
+        return name;
     }
 
     public Status getStatus(){
