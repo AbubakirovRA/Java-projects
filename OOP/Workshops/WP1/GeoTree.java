@@ -1,3 +1,5 @@
+package OOP.Workshops.WP1;
+
 import java.util.ArrayList;
 
 public class GeoTree {

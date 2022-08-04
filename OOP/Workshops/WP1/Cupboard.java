@@ -1,9 +1,10 @@
+package OOP.Workshops.WP1;
+
 import java.util.ArrayList;
 
 public class Cupboard {
     private static Integer id = 0; // Порядковый номер шкафа
     private String name;
-    private boolean openStatus = false; // true = Open, false = Closed
     private ArrayList<Item> items;
 
     /**
@@ -17,7 +18,6 @@ public class Cupboard {
     public Cupboard(String name, boolean status, Item[] items) {
         id++;
         this.name = name;
-        this.openStatus = status;
         this.items = new ArrayList<Item>();
         for (Item item : items) {
             this.items.add(item);
@@ -40,14 +40,12 @@ public class Cupboard {
      * Открываем шкаф
      */
     public void openCupboard() {
-        this.openStatus = true;
     }
 
     /**
      * Закрываем шкаф
      */
     public void closeCupboard() {
-        this.openStatus = false;
     }
 
     /**

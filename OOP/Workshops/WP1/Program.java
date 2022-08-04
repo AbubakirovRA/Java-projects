@@ -1,3 +1,5 @@
+package OOP.Workshops.WP1;
+
 import java.util.ArrayList;
  
 public class Program {
@@ -31,6 +33,22 @@ class Person {
   public Person(String fullName) {
     this.fullName = fullName;
   }
+
+  public void putItemIntoCupboard(Cupboard justCupboard, Item panckace) {
+  }
+
+public char[] getItems() {
+    return null;
+}
+
+public void getItemFromCupboard(Cupboard fridge, Item elefant) {
+}
+
+public void addItem(Item coin) {
+}
+
+public void callCat(String string, Cat cat1) {
+}
 }
   
 class Node {
@@ -43,6 +61,7 @@ class Node {
    Person p1;
    Relationship re;
    Person p2;
+  public Object person2;
  
    @Override
    public String toString() {
@@ -60,6 +79,9 @@ class GeoTree {
     tree.add(new Node(parent, Relationship.parent, children));
     tree.add(new Node(children, Relationship.children, parent));
   }
+
+  public void addFamily(Person masha, Person pasha, Person[] mashaAndPashaChilds) {
+  }
 }
  
 class Reserch {
@@ -69,6 +91,7 @@ class Reserch {
   }
   
   public ArrayList<Person> spend(Person p, Relationship re) {
+    ArrayList<Person> result = new ArrayList<>();
     for (Node t : tree) {
       if (t.p1.fullName == p.fullName && t.re == re) {
             result.add(t.p2);

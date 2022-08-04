@@ -1,3 +1,5 @@
+package OOP.Workshops.WP1;
+
 import java.util.ArrayList;
 
 public class Person {
@@ -89,7 +91,7 @@ public class Person {
 
     public String getItems() {
         StringBuilder sb = new StringBuilder();
-        sb.append("У " + this.firstName + " в корманах: ");
+        sb.append("У " + this.firstName + " в карманах: ");
         for (Item item : items) {
             sb.append(item + ", ");
         }

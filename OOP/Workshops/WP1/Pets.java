@@ -1,3 +1,5 @@
+package OOP.Workshops.WP1;
+
 public class Pets {
     protected String name;
 

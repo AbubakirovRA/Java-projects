@@ -1,3 +1,5 @@
+package OOP.Workshops.WP1;
+
 /**
  * Start
  */
@@ -54,7 +56,7 @@ public class Base {
         pasha.getItemFromCupboard(fridge, yogurt); //забираем из холодильника йогурт
 
         pasha.putItemIntoCupboard(justCupboard, panckace); //пытаемся положить в шкаф блин (который в холодильнике)
-        pasha.putItemIntoCupboard(justCupboard, coin); //калдём монетку в шкаф
+        pasha.putItemIntoCupboard(justCupboard, coin); //кладём монетку в шкаф
 
         pasha.getItemFromCupboard(justCupboard, elefant); //забираем слона из шкафа
         pasha.putItemIntoCupboard(fridge, elefant); //кладём слона в холодильник
