@@ -20,10 +20,10 @@ public class Engine<M extends Model, V extends Viewer> {
                 viewer.outputLine(model.answerLine(Integer.parseInt(input)));
             } catch (Exception e) {
                 if (input.equals("S")) {
-                    save("saved.txt", model); //используем единый сейв слот
+                    save("saved", model); //используем единый сейв слот
                     viewer.outputLine("Saved. Ok!\n");
                 } else if (input.equals("L")) {
-                    loadModel("saved.txt"); //используем единый сейв слот
+                    loadModel("saved"); //используем единый сейв слот
                     viewer.outputLine("Loaded. Ok!\n");
                 }
             }
