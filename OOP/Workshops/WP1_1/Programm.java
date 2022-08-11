@@ -8,8 +8,8 @@ public class Programm {
     public static void main(String[] args) throws IOException {
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
 
-        Cats cat = new Cats(buffer.readLine(), buffer.readLine(), buffer.readLine());
-        System.out.println(cat);
+        Dog dog = new Dog(getName(buffer.readLine()), getWeight(buffer.readLine()));
+        System.out.println(dog);
     }
 
 }

@@ -8,7 +8,7 @@ public class Base {
         
         System.out.println("----------------------------------------------------------------");
         //Дерево потомков
-        Person masha = new Person("Masha");
+        Person masha = new Person("Ekaterina");//Создали экземпляр Ekaterina класса Person с помощью метода класса Person
         Person pasha = new Person("Pasha");
         Person yasha = new Person("Yasha");
         Person natasha = new Person("Natasha");
@@ -17,15 +17,22 @@ public class Base {
         Person irina = new Person("Irina");
         Person misha = new Person("Misha");
 
-        GeoTree geoTree1 = new GeoTree();
-        Person[] mashaAndPashaChilds = {yasha,natasha,sasha};
-        geoTree1.addFamily(masha, pasha, mashaAndPashaChilds);
+        GeoTree geoTree1 = new GeoTree();//Создаем экземпляр geoTree1 класса GeoTree, с помощью метода класса GeoTree
+        Person[] mashaAndPashaChilds = {yasha,natasha,sasha};//создаем массив mashaAndPashaChilds, в котором перечисляем созданные экземпляры класса Person, 
+                                                             //которые являются детьми созданных экземпляров masha и pasha класса Person
         
-        geoTree1.append(sasha, egor);
+        /**
+         * инициализируем созданный экземпляр geoTree1
+         */
+        geoTree1.addFamily(masha, pasha, mashaAndPashaChilds);//создаем семью
+        geoTree1.append(sasha, egor);//создаем пары родитель-ребенок
         geoTree1.append(sasha, irina);
         geoTree1.append(natasha, misha);
 
-        Research research1 = new Research(geoTree1);
+        /**
+         * Проводим "исследование" созданного экземпляра geoTree1
+         */
+        Research research1 = new Research(geoTree1);//создаем экземпляр research1 класса Research, которму передаем экземляр geoTree1
         System.out.println(research1.find(RelationType.childOf, masha) + "- дети Маши (Яша, Наташа, Саша)"); 
         System.out.println(research1.find(RelationType.childOf, sasha) + "- дети Саши (Ирина Ягор)"); 
         System.out.println(research1.find(RelationType.husbandWifeOf, pasha) + "- супруга Паши (Маша)");

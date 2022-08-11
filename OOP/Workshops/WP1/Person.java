@@ -3,8 +3,8 @@ package OOP.Workshops.WP1;
 import java.util.ArrayList;
 
 public class Person {
-    private String firstName;
-    private ArrayList<Item> items;
+    private String firstName;//Переменная класса отвечает за имя экземпляра, строка, доступна только через геттер
+    private ArrayList<Item> items;//Переменная класса, отвечает за перечень вещей, которые есть у экземпляра, динамический массив, доступен только через геттер
 
     /**
      * Коструктор человека =)
@@ -13,21 +13,41 @@ public class Person {
      * @param items     - предметы что есть у человека, по умолчанию пусто
      */
     public Person(String firstName, ArrayList<Item> items) {
-        this.firstName = firstName;
-        this.items = items;
+        this.firstName = firstName;// присваиваем экземпляру имя
+        this.items = items;//присваиваем экзепляру перечень его вещей
     }
 
+    /**
+     * Перегрузка метода в случае, если 
+     * у экземпляра нет вещей
+     * @param firstName
+     */
     public Person(String firstName) {
         this(firstName, new ArrayList<Item>());
     }
 
+    /**Перегрузка метода по умолчанию,
+     * то есть если в клиентском коде
+     * конструктору не переданы параметры
+     */
     public Person() {
         this("Безымянный");
     }
 
+    /**
+     * Геттер для доступа к параметру экземпляра firstName
+     * @return
+     */
     public String getFirstName() {
         return firstName;
     }
+
+/**
+ * Инициализация шкафов экземпляра,
+ * т.е. задание шкафов, с которыми экземпляр взаимодействует,
+ * и состояний этих шкафов - открыт/закрыт, есть в нем вещи или он пуст
+ */
+
 
     /**
      * Открытие шкафа
@@ -89,6 +109,9 @@ public class Person {
         items.add(item);
     }
 
+    /**
+     * Геттер к перечню вещей экземпляра
+     */
     public String getItems() {
         StringBuilder sb = new StringBuilder();
         sb.append("У " + this.firstName + " в карманах: ");
@@ -99,7 +122,9 @@ public class Person {
     }
 
     /**
-     * Метод позвать котика
+     * Инициализация взаимодействия экземпляра
+     * с котами, то есть к какому коту данный экземпляр обращается, через клиентский код
+     * и какую команду он ему посылает
      * 
      * @param phrase - сказанная фраза
      * @param target - какому коту
