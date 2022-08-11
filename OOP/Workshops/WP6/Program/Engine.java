@@ -36,7 +36,7 @@ public class Engine<M extends Model, V extends Viewer> {
         try {
             save.save(path, obj);
         } catch (Exception e) {
-            viewer.outputLine(String.format("Save Failed. Error: %s\n", e.toString()));
+            viewer.outputLine(String.format("Save Error: %s\n", e.toString()));
         }
 
     }
@@ -45,7 +45,7 @@ public class Engine<M extends Model, V extends Viewer> {
         try {
             save.load(path);
         } catch (Exception e) {
-            viewer.outputLine(String.format("Load Failed. Error: %s\n", e.toString()));
+            viewer.outputLine(String.format("Load Error: %s\n", e.toString()));
         }
     }
 }
