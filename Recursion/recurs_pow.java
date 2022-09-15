@@ -8,9 +8,9 @@ public class recurs_pow {
     }
 
     public static int pow(int x, int n) {
-        // return (n == 1) ? x : (x * pow(x, n - 1)); // то же через тернарные операторы
-        if (n == 1)
-            return x;
-        return x * pow(x, n - 1);
+        return (n == 1) ? x : (x * pow(x, n - 1)); // то же через тернарные операторы
+        // if (n == 1)
+        //     return x;
+        // return x * pow(x, n - 1);
     }
 }

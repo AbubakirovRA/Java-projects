@@ -7,14 +7,14 @@ import java.util.Queue;
 public class Program {
     public static void main(String[] args) {
 
-        var mg = new MapGenerator();
+        MapGenerator mg = new MapGenerator();
         System.out.println(
                 new MapPrinter().rawData(
                         mg.getMap())
 
         );
 
-        var lee = new WaveAlgorithm(mg.getMap());
+        WaveAlgorithm lee = new WaveAlgorithm(mg.getMap());
         lee.Colorize(new Point2D(3, 3));
 
         System.out.println(
