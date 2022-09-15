@@ -1,3 +1,5 @@
+package OOP.Workshops.WP1_1;
+
 public class Dog {
     private String name;
     private int weight;
@@ -11,7 +13,7 @@ public class Dog {
         this("Dog", 20);
     }
 
-    public getName(){
+    public String getName(){
         return name;
     }
 
@@ -19,11 +21,11 @@ public class Dog {
         this.name = name;
     }
 
-    public getWeight(){
+    public int getWeight(){
         return weight;
     }
 
-    public void setWeight(String name){
-        this.name = weight;
+    public void setWeight(int weight){
+        this.weight = weight;
     }
 }
