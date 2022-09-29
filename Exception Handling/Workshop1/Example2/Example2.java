@@ -1,5 +1,5 @@
 package Example2;
-import Example2.src.RequestNumber.java.RequestNumber.requestNumber;
+import Example2.*;
 
  /* example2
  */
