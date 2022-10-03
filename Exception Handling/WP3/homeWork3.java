@@ -42,7 +42,7 @@ public class homeWork3 {
         if (checkAmount(userDate)) {
             System.out.println(stringValidate(userDate));
         } else {
-            System.out.println("Слишком много/слишком мало данных, проверьте ввод!");
+            System.out.println("Проверьте ввод!");
         }
 
     }
@@ -50,10 +50,12 @@ public class homeWork3 {
     private static Boolean checkAmount(String userDate) {
         String[] words = userDate.split(" ");
         if (words.length < 6) {
-            return false;// "Введено мало данных!";
+            System.out.println("Введено мало данных!");
+            return false;
         }
         if (words.length > 6) {
-            return false;// "Введено слишком много данных!";
+            System.out.println("Введено слишком много данных!");
+            return false;
         }
         return true;
     }
