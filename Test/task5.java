@@ -10,17 +10,20 @@ import java.util.Scanner;
 public class task5 {
     public static void main(String[] args){
         double sum = 0;
+        int count = 0;
         Scanner in = new Scanner(System.in);
 
         while(true){
             System.out.println("Enter number or 'empty string");
             String str = in.nextLine();
+            
 
             try{
                 if (str == "" || str.equals(" ")){
                     in.close();
                     break;
                 }
+                count +=1;
                 sum += Double.parseDouble(str);
             }
 
@@ -28,7 +31,7 @@ public class task5 {
                 System.out.println("Wrong enter! " + e);
             }
         }
-        System.out.println("Summ = " + sum);
+        System.out.println("Summ = " + sum / count);
     }
 
 }

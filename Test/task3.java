@@ -15,7 +15,7 @@ public class task3 {
         int max = arr[0];
 
         for (int j = 0; j < arr.length; j++) {
-            arr[j] = getIntRnd.rndGenerator(3, 6);
+            arr[j] = getIntRnd.rndGenerator(-15, 14);
             if (arr[j] > max){
                 max = arr[j];
             }
