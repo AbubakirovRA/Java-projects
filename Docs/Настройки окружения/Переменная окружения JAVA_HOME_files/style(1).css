@@ -1,0 +1,51 @@
+/*
+ Theme Name:   java-lessons.ru theme
+ Template:     spacious
+*/
+/* ссылки в посте */
+
+
+.entry-header img {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin-top: 5px;
+}
+
+.entry-header h2.with-img {
+  position: relative;
+  top: 0px;
+  margin-left: 74px;
+  padding-bottom: 12px;
+}
+
+.post .entry-meta {
+  border: 0px;
+}
+
+.sidebar-category-title {
+	padding: 0 30px;
+    border-bottom: 4px solid #f0595c;
+	margin-bottom: 18px;
+}
+
+a.sidebar-category-title-link {
+	text-decoration: none !important;
+}
+
+a.sidebar-category-title-link:hover {
+	color: #f0595c !important;
+}
+
+.sidebar-category-title h2 {
+    padding-bottom: 8px;
+}
+
+
+.sidebar-category-list li {
+    padding-bottom: 4px;
+}
+
+.pad {
+	margin: 40px auto 40px;
+}
