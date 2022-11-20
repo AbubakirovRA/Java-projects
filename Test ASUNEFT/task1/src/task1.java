@@ -1,10 +1,13 @@
- /*
+package task1.src;
+
+/*
   * task1
   * Вводится целое число, 
   * обозначающее код символа по таблице ASCII. 
   * Определить, это код английской буквы или какой-либо иной символ.
   */
- public class task1 {
+
+public class task1 {
  
     public static void main(String[] args){
         char ch = (char) getInt.request();

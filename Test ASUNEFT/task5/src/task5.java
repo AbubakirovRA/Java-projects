@@ -1,3 +1,4 @@
+package task5.src;
 
 import java.util.Scanner;
 

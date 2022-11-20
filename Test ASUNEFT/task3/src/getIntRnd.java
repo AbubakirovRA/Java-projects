@@ -1,3 +1,4 @@
+package task3.src;
 
 import java.util.Random;
 

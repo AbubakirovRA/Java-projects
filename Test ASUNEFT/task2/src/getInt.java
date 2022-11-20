@@ -1,3 +1,4 @@
+package task2.src;
 
 import java.util.Scanner;
 
