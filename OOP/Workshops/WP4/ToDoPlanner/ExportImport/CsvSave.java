@@ -1,10 +1,10 @@
-package OOP.Workshops.WP4.ToDoPlanner.ExportImport;
+package Workshops.WP4.ToDoPlanner.ExportImport;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import OOP.Workshops.WP4.ToDoPlanner.Model.Task;
+import Workshops.WP4.ToDoPlanner.Model.Task;
 
 public class CsvSave implements Saver {
 

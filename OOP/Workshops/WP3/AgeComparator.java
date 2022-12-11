@@ -1,4 +1,4 @@
-package OOP.Workshops.WP3;
+package Workshops.WP3;
 import java.util.Comparator;
 
 public class AgeComparator implements Comparator<Person>{

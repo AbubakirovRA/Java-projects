@@ -1,5 +1,3 @@
-package OOP.Workshops.WP1_1;
-
 public class Animals {
     protected String type;
     protected String breed;

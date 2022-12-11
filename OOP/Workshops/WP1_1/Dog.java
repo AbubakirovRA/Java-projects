@@ -1,29 +1,27 @@
 public class Dog {
-    private String name;
-    private int weight;
+    public String name;
+    public int weight;
 
     public Dog(String name, int weight){
-        this.name = name;
-        this.weight = weight;
+        this.name = getName();
+        this.weight = getWeight();
     }
 
     public Dog(){
         this("Dog", 20);
     }
 
-    public getName(){
+    public String getName(){
         return name;
     }
-
     public void setName(String name){
         this.name = name;
     }
 
-    public getWeight(){
+    public int getWeight(){
         return weight;
     }
-
-    public void setWeight(String name){
-        this.name = weight;
+    public void setWeight(int weight){
+        this.weight = weight;
     }
 }

@@ -1,4 +1,4 @@
-package OOP.Lectures.Lecture1.Part2;
+package Lectures.Lecture1.Part2;
 
 import java.util.ArrayList;
 

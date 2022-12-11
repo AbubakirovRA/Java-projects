@@ -1,4 +1,4 @@
-package OOP.Workshops.WP1;
+package Workshops.WP1;
 
 /**
  * Тип отношений, от первого ко второму

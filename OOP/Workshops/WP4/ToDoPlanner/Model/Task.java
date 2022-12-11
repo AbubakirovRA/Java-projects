@@ -1,4 +1,4 @@
-package OOP.Workshops.WP4.ToDoPlanner.Model;
+package Workshops.WP4.ToDoPlanner.Model;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

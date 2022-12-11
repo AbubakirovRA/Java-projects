@@ -1,4 +1,4 @@
-package OOP.Workshops.WP4.ToDoPlanner.ExportImport;
+package Workshops.WP4.ToDoPlanner.ExportImport;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import OOP.Workshops.WP4.ToDoPlanner.Model.Task;
-import OOP.Workshops.WP4.ToDoPlanner.Model.TaskPriority;
+import Workshops.WP4.ToDoPlanner.Model.Task;
+import Workshops.WP4.ToDoPlanner.Model.TaskPriority;
 
 public class CsvLoad implements Loader {
 

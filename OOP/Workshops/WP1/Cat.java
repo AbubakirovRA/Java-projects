@@ -1,4 +1,4 @@
-package OOP.Workshops.WP1;
+package Workshops.WP1;
 
 public class Cat extends Pets{
     public Cat(String name){

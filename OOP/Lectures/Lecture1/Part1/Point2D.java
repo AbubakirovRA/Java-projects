@@ -1,4 +1,4 @@
-package OOP.Lectures.Lecture1.Part1;
+package Lectures.Lecture1.Part1;
 
 public class Point2D {
     private int x, y; //если модификатор доступа не указан, то по умолчанию устанавливается доступ public

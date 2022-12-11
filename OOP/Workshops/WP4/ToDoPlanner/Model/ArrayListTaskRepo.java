@@ -1,10 +1,10 @@
-package OOP.Workshops.WP4.ToDoPlanner.Model;
+package Workshops.WP4.ToDoPlanner.Model;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import OOP.Workshops.WP4.ToDoPlanner.ExportImport.Loader;
-import OOP.Workshops.WP4.ToDoPlanner.ExportImport.Saver;
+import Workshops.WP4.ToDoPlanner.ExportImport.Loader;
+import Workshops.WP4.ToDoPlanner.ExportImport.Saver;
 
 public class ArrayListTaskRepo implements TaskRepo<Task> {
     ArrayList<Task> tasksList;

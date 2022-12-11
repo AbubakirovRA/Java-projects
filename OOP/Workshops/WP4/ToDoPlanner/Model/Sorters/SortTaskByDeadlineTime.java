@@ -1,9 +1,9 @@
-package OOP.Workshops.WP4.ToDoPlanner.Model.Sorters;
+package Workshops.WP4.ToDoPlanner.Model.Sorters;
 
 import java.time.LocalDateTime;
 import java.util.Comparator;
 
-import OOP.Workshops.WP4.ToDoPlanner.Model.Task;
+import Workshops.WP4.ToDoPlanner.Model.Task;
 
 public class SortTaskByDeadlineTime implements Comparator<Task> {
 

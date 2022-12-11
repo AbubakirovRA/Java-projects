@@ -1,4 +1,4 @@
-package OOP.Workshops.WP4.ToDoPlanner.View;
+package Workshops.WP4.ToDoPlanner.View;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package OOP.Workshops.WP1;
+package Workshops.WP1;
 
 import java.util.ArrayList;
  
@@ -15,8 +15,7 @@ public class Program {
   gt.append(vasya, jane);
   gt.append(vasya, ivan);
   
-  System.out.println(new Reserch(gt).spend(irina,
-                     Relationship.parent));
+  System.out.println(new Reserch(gt).spend(irina, Relationship.parent));
   }
 }
 enum Relationship {
@@ -49,6 +48,10 @@ public void addItem(Item coin) {
 
 public void callCat(String string, Cat cat1) {
 }
+
+public Object getFirstName() {
+  return null;
+}
 }
   
 class Node {
@@ -71,7 +74,7 @@ class Node {
  
 class GeoTree {
   private ArrayList<Node> tree = new ArrayList<>();
-  public ArrayList<Node> getTree() {
+  public ArrayList<RelationsNode> getTree() {
     return tree;
   }
  

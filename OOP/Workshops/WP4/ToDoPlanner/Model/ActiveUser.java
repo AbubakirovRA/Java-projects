@@ -1,4 +1,4 @@
-package OOP.Workshops.WP4.ToDoPlanner.Model;
+package Workshops.WP4.ToDoPlanner.Model;
 
 public abstract class ActiveUser {
     private static Person activeUser;

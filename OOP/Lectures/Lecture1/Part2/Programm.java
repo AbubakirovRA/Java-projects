@@ -1,4 +1,4 @@
-package OOP.Lectures.Lecture1.Part2;
+package Lectures.Lecture1.Part2;
 
 public class Programm {
     public static void main(String[] args) {

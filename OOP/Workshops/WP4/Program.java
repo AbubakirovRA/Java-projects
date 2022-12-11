@@ -1,11 +1,11 @@
-package OOP.Workshops.WP4;
+package Workshops.WP4;
 
-import OOP.Workshops.WP4.ToDoPlanner.Model.ArrayListTaskRepo;
-import OOP.Workshops.WP4.ToDoPlanner.Model.Task;
-import OOP.Workshops.WP4.ToDoPlanner.Model.TaskRepo;
-import OOP.Workshops.WP4.ToDoPlanner.Presenter.Presenter;
-import OOP.Workshops.WP4.ToDoPlanner.View.ConsoleView;
-import OOP.Workshops.WP4.ToDoPlanner.View.View;
+import Workshops.WP4.ToDoPlanner.Model.ArrayListTaskRepo;
+import Workshops.WP4.ToDoPlanner.Model.Task;
+import Workshops.WP4.ToDoPlanner.Model.TaskRepo;
+import Workshops.WP4.ToDoPlanner.Presenter.Presenter;
+import Workshops.WP4.ToDoPlanner.View.ConsoleView;
+import Workshops.WP4.ToDoPlanner.View.View;
 
 public class Program {
 

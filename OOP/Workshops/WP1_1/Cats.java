@@ -1,5 +1,3 @@
-package OOP.Workshops.WP1_1;
-
 public class Cats extends Animals{
     public String name;
     public String type;

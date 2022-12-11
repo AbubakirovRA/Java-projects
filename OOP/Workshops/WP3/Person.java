@@ -1,4 +1,4 @@
-package OOP.Workshops.WP3;
+package Workshops.WP3;
 
 public class Person implements Comparable<Person> {
     public String firstName;

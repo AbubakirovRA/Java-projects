@@ -1,4 +1,4 @@
-package OOP.Lectures.Lecture1.Part1;
+package Lectures.Lecture1.Part1;
 
 public class Programm {
     /**
