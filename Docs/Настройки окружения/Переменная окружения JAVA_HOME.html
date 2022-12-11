@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://java-lessons.ru/first-steps/java-home -->
+<html lang="ru-RU" prefix="og: https://ogp.me/ns#"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	
+<!-- SEO от Rank Math - https://s.rankmath.com/home -->
+<title>Переменная окружения JAVA_HOME</title>
+<meta name="description" content="Во многих статьях в интернете, документации к инструментам для разработки на Java и в книгах зачастую упоминается JAVA_HOME. Что же такое JAVA_HOME?">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://java-lessons.ru/first-steps/java-home">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Переменная окружения JAVA_HOME">
+<meta property="og:description" content="Во многих статьях в интернете, документации к инструментам для разработки на Java и в книгах зачастую упоминается JAVA_HOME. Что же такое JAVA_HOME?">
+<meta property="og:url" content="https://java-lessons.ru/first-steps/java-home">
+<meta property="og:site_name" content="Программирование на Java">
+<meta property="article:tag" content="todo">
+<meta property="article:section" content="Первые шаги">
+<meta property="og:updated_time" content="2022-07-14T01:18:13+03:00">
+<meta property="og:image" content="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png">
+<meta property="og:image:secure_url" content="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png">
+<meta property="og:image:width" content="669">
+<meta property="og:image:height" content="802">
+<meta property="og:image:alt" content="Переменная окружения JAVA_HOME">
+<meta property="og:image:type" content="image/png">
+<meta property="article:published_time" content="2020-04-19T06:54:00+03:00">
+<meta property="article:modified_time" content="2022-07-14T01:18:13+03:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Переменная окружения JAVA_HOME">
+<meta name="twitter:description" content="Во многих статьях в интернете, документации к инструментам для разработки на Java и в книгах зачастую упоминается JAVA_HOME. Что же такое JAVA_HOME?">
+<meta name="twitter:image" content="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png">
+<meta name="twitter:label1" content="Автор">
+<meta name="twitter:data1" content="admin">
+<meta name="twitter:label2" content="Время чтения">
+<meta name="twitter:data2" content="Меньше минуты">
+<script async="" src="./Переменная окружения JAVA_HOME_files/tag.js"></script><script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://java-lessons.ru/#person","name":"admin"},{"@type":"WebSite","@id":"https://java-lessons.ru/#website","url":"https://java-lessons.ru","name":"admin","publisher":{"@id":"https://java-lessons.ru/#person"},"inLanguage":"ru-RU"},{"@type":"ImageObject","@id":"https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png","url":"https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png","width":"200","height":"200","inLanguage":"ru-RU"},{"@type":"BreadcrumbList","@id":"https://java-lessons.ru/first-steps/java-home#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://java-lessons.ru","name":"\u0413\u043b\u0430\u0432\u043d\u0430\u044f"}},{"@type":"ListItem","position":"2","item":{"@id":"https://java-lessons.ru/first-steps","name":"\u041f\u0435\u0440\u0432\u044b\u0435 \u0448\u0430\u0433\u0438"}},{"@type":"ListItem","position":"3","item":{"@id":"https://java-lessons.ru/first-steps/java-home","name":"\u041f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f JAVA_HOME"}}]},{"@type":"WebPage","@id":"https://java-lessons.ru/first-steps/java-home#webpage","url":"https://java-lessons.ru/first-steps/java-home","name":"\u041f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f JAVA_HOME","datePublished":"2020-04-19T06:54:00+03:00","dateModified":"2022-07-14T01:18:13+03:00","isPartOf":{"@id":"https://java-lessons.ru/#website"},"primaryImageOfPage":{"@id":"https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png"},"inLanguage":"ru-RU","breadcrumb":{"@id":"https://java-lessons.ru/first-steps/java-home#breadcrumb"}},{"@type":"Person","@id":"https://java-lessons.ru/first-steps/java-home#author","name":"admin","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/338d2e3907e577ff4a4bbbe758d1b0d5?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/338d2e3907e577ff4a4bbbe758d1b0d5?s=96&amp;d=mm&amp;r=g","caption":"admin","inLanguage":"ru-RU"}},{"@type":"BlogPosting","headline":"\u041f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f JAVA_HOME","datePublished":"2020-04-19T06:54:00+03:00","dateModified":"2022-07-14T01:18:13+03:00","author":{"@id":"https://java-lessons.ru/first-steps/java-home#author"},"publisher":{"@id":"https://java-lessons.ru/#person"},"description":"\u0412\u043e \u043c\u043d\u043e\u0433\u0438\u0445 \u0441\u0442\u0430\u0442\u044c\u044f\u0445 \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0435, \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438 \u043a \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430\u043c \u0434\u043b\u044f \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u043d\u0430 Java \u0438 \u0432 \u043a\u043d\u0438\u0433\u0430\u0445 \u0437\u0430\u0447\u0430\u0441\u0442\u0443\u044e \u0443\u043f\u043e\u043c\u0438\u043d\u0430\u0435\u0442\u0441\u044f JAVA_HOME. \u0427\u0442\u043e \u0436\u0435 \u0442\u0430\u043a\u043e\u0435 JAVA_HOME?","name":"\u041f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u0430\u044f \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f JAVA_HOME","@id":"https://java-lessons.ru/first-steps/java-home#richSnippet","isPartOf":{"@id":"https://java-lessons.ru/first-steps/java-home#webpage"},"image":{"@id":"https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png"},"inLanguage":"ru-RU","mainEntityOfPage":{"@id":"https://java-lessons.ru/first-steps/java-home#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO плагин -->
+
+<link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Программирование на Java » Лента" href="https://java-lessons.ru/feed">
+
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/java-lessons.ru\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./Переменная окружения JAVA_HOME_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-quicklatex-format-css" href="./Переменная окружения JAVA_HOME_files/quicklatex-format.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Переменная окружения JAVA_HOME_files/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="dashicons-css" href="./Переменная окружения JAVA_HOME_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="everest-forms-general-css" href="./Переменная окружения JAVA_HOME_files/everest-forms.css" type="text/css" media="all">
+<link rel="stylesheet" id="otfm-guten-spoiler-css-css" href="./Переменная окружения JAVA_HOME_files/otfm-spoiler-min.css" type="text/css" media="all">
+<link rel="stylesheet" id="pciwgas-publlic-style-css" href="./Переменная окружения JAVA_HOME_files/categoryimage-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="quiz-maker-css" href="./Переменная окружения JAVA_HOME_files/quiz-maker-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpel-font-awesome-css" href="./Переменная окружения JAVA_HOME_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpel-style-css" href="./Переменная окружения JAVA_HOME_files/wpel.css" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="./Переменная окружения JAVA_HOME_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="child-style-css" href="./Переменная окружения JAVA_HOME_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="spacious_style-css" href="./Переменная окружения JAVA_HOME_files/style(1).css" type="text/css" media="all">
+<style id="spacious_style-inline-css" type="text/css">
+.previous a:hover, .next a:hover, a, #site-title a:hover, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .main-navigation ul li:hover > .sub-toggle, .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .small-menu a:hover, .small-menu ul li.current-menu-item a, .small-menu ul li.current_page_ancestor a, .small-menu ul li.current-menu-ancestor a, .small-menu ul li.current_page_item a, .small-menu ul li:hover > a, .breadcrumb a:hover, .tg-one-half .widget-title a:hover, .tg-one-third .widget-title a:hover, .tg-one-fourth .widget-title a:hover, .pagination a span:hover, #content .comments-area a.comment-permalink:hover, .comments-area .comment-author-link a:hover, .comment .comment-reply-link:hover, .nav-previous a:hover, .nav-next a:hover, #wp-calendar #today, .footer-widgets-area a:hover, .footer-socket-wrapper .copyright a:hover, .read-more, .more-link, .post .entry-title a:hover, .page .entry-title a:hover, .post .entry-meta a:hover, .type-page .entry-meta a:hover, .single #content .tags a:hover, .widget_testimonial .testimonial-icon:before, .header-action .search-wrapper:hover .fa{color:rgb(30,115,190);}.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button, #featured-slider .slider-read-more-button, #controllers a:hover, #controllers a.active, .pagination span ,.site-header .menu-toggle:hover, .call-to-action-button, .comments-area .comment-author-link span, a#back-top:before, .post .entry-meta .read-more-link, a#scroll-up, .search-form span, .main-navigation .tg-header-button-wrap.button-one a{background-color:rgb(30,115,190);}.main-small-navigation li:hover, .main-small-navigation ul > .current_page_item, .main-small-navigation ul > .current-menu-item, .spacious-woocommerce-cart-views .cart-value{background:rgb(30,115,190);}.main-navigation ul li ul, .widget_testimonial .testimonial-post{border-top-color:rgb(30,115,190);}blockquote, .call-to-action-content-wrapper{border-left-color:rgb(30,115,190);}.site-header .menu-toggle:hover.entry-meta a.read-more:hover,#featured-slider .slider-read-more-button:hover,.call-to-action-button:hover,.entry-meta .read-more-link:hover,.spacious-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover{background:#0000000000005e00;}.pagination a span:hover, .main-navigation .tg-header-button-wrap.button-one a{border-color:rgb(30,115,190);}.widget-title span{border-bottom-color:rgb(30,115,190);}.widget_service_block a.more-link:hover, .widget_featured_single_post a.read-more:hover,#secondary a:hover,logged-in-as:hover  a,.single-page p a:hover{color:#0000000000005e00;}.main-navigation .tg-header-button-wrap.button-one a:hover{background-color:#0000000000005e00;}body, button, input, select, textarea, p, .entry-meta, .read-more, .more-link, .widget_testimonial .testimonial-author, #featured-slider .slider-read-more-button{font-family:Open Sans;}h1, h2, h3, h4, h5, h6{font-family:Open Sans;}
+</style>
+<link rel="stylesheet" id="spacious-genericons-css" href="./Переменная окружения JAVA_HOME_files/genericons.css" type="text/css" media="all">
+<link rel="stylesheet" id="spacious-font-awesome-css" href="./Переменная окружения JAVA_HOME_files/font-awesome.min(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="spacious_googlefonts-css" href="./Переменная окружения JAVA_HOME_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-featherlight-css" href="./Переменная окружения JAVA_HOME_files/wp-featherlight.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="enlighterjs-css" href="./Переменная окружения JAVA_HOME_files/enlighterjs.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="qubely_local_script-js-extra">
+/* <![CDATA[ */
+var qubely_urls = {"plugin":"https:\/\/java-lessons.ru\/wp-content\/plugins\/qubely\/","ajax":"https:\/\/java-lessons.ru\/wp-admin\/admin-ajax.php","nonce":"62ad4bd278","actual_url":"java-lessons.ru"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="qubely_container_width-js-extra">
+/* <![CDATA[ */
+var qubely_container_width = {"sm":"540","md":"720","lg":"960","xl":"1140"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/spacious-custom.js" id="spacious-custom-js"></script>
+<!--[if lte IE 8]>
+<script type='text/javascript' src='https://java-lessons.ru/wp-content/themes/spacious/js/html5shiv.min.js?ver=6.0.1' id='html5-js'></script>
+<![endif]-->
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/wp-quicklatex-frontend.js" id="wp-quicklatex-frontend-js"></script>
+<link rel="https://api.w.org/" href="https://java-lessons.ru/wp-json/"><link rel="alternate" type="application/json" href="https://java-lessons.ru/wp-json/wp/v2/posts/893"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://java-lessons.ru/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://java-lessons.ru/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.1">
+<meta name="generator" content="Everest Forms 1.9.1">
+<link rel="shortlink" href="https://java-lessons.ru/?p=893">
+<link rel="alternate" type="application/json+oembed" href="https://java-lessons.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjava-lessons.ru%2Ffirst-steps%2Fjava-home">
+<link rel="alternate" type="text/xml+oembed" href="https://java-lessons.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fjava-lessons.ru%2Ffirst-steps%2Fjava-home&amp;format=xml">
+<style></style>
+<style type="text/css"></style>		<style type="text/css"> blockquote { border-left: 3px solid rgb(30,115,190); }
+			.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button { background-color: rgb(30,115,190); }
+			.previous a:hover, .next a:hover { 	color: rgb(30,115,190); }
+			a { color: rgb(30,115,190); }
+			#site-title a:hover { color: rgb(30,115,190); }
+			.main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a { color: rgb(30,115,190); }
+			.main-navigation ul li ul { border-top: 1px solid rgb(30,115,190); }
+			.main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .main-navigation ul li:hover > .sub-toggle { color: rgb(30,115,190); }
+			.site-header .menu-toggle:hover.entry-meta a.read-more:hover,#featured-slider .slider-read-more-button:hover,.call-to-action-button:hover,.entry-meta .read-more-link:hover,.spacious-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover { background: #0000000000005e00; }
+			.main-small-navigation li:hover { background: rgb(30,115,190); }
+			.main-small-navigation ul > .current_page_item, .main-small-navigation ul > .current-menu-item { background: rgb(30,115,190); }
+			.main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a  { color: rgb(30,115,190); }
+			.small-menu a:hover, .small-menu ul li.current-menu-item a, .small-menu ul li.current_page_ancestor a, .small-menu ul li.current-menu-ancestor a, .small-menu ul li.current_page_item a, .small-menu ul li:hover > a { color: rgb(30,115,190); }
+			#featured-slider .slider-read-more-button { background-color: rgb(30,115,190); }
+			#controllers a:hover, #controllers a.active { background-color: rgb(30,115,190); color: rgb(30,115,190); }
+			.widget_service_block a.more-link:hover, .widget_featured_single_post a.read-more:hover,#secondary a:hover,logged-in-as:hover  a,.single-page p a:hover{ color: #0000000000005e00; }
+			.breadcrumb a:hover { color: rgb(30,115,190); }
+			.tg-one-half .widget-title a:hover, .tg-one-third .widget-title a:hover, .tg-one-fourth .widget-title a:hover { color: rgb(30,115,190); }
+			.pagination span ,.site-header .menu-toggle:hover{ background-color: rgb(30,115,190); }
+			.pagination a span:hover { color: rgb(30,115,190); border-color: rgb(30,115,190); }
+			.widget_testimonial .testimonial-post { border-color: rgb(30,115,190) #EAEAEA #EAEAEA #EAEAEA; }
+			.call-to-action-content-wrapper { border-color: #EAEAEA #EAEAEA #EAEAEA rgb(30,115,190); }
+			.call-to-action-button { background-color: rgb(30,115,190); }
+			#content .comments-area a.comment-permalink:hover { color: rgb(30,115,190); }
+			.comments-area .comment-author-link a:hover { color: rgb(30,115,190); }
+			.comments-area .comment-author-link span { background-color: rgb(30,115,190); }
+			.comment .comment-reply-link:hover { color: rgb(30,115,190); }
+			.nav-previous a:hover, .nav-next a:hover { color: rgb(30,115,190); }
+			#wp-calendar #today { color: rgb(30,115,190); }
+			.widget-title span { border-bottom: 2px solid rgb(30,115,190); }
+			.footer-widgets-area a:hover { color: rgb(30,115,190) !important; }
+			.footer-socket-wrapper .copyright a:hover { color: rgb(30,115,190); }
+			a#back-top:before { background-color: rgb(30,115,190); }
+			.read-more, .more-link { color: rgb(30,115,190); }
+			.post .entry-title a:hover, .page .entry-title a:hover { color: rgb(30,115,190); }
+			.post .entry-meta .read-more-link { background-color: rgb(30,115,190); }
+			.post .entry-meta a:hover, .type-page .entry-meta a:hover { color: rgb(30,115,190); }
+			.single #content .tags a:hover { color: rgb(30,115,190); }
+			.widget_testimonial .testimonial-icon:before { color: rgb(30,115,190); }
+			a#scroll-up { background-color: rgb(30,115,190); }
+			.search-form span { background-color: rgb(30,115,190); }.header-action .search-wrapper:hover .fa{ color: rgb(30,115,190)} .spacious-woocommerce-cart-views .cart-value { background:rgb(30,115,190)}.main-navigation .tg-header-button-wrap.button-one a{background-color:rgb(30,115,190)} .main-navigation .tg-header-button-wrap.button-one a{border-color:rgb(30,115,190)}.main-navigation .tg-header-button-wrap.button-one a:hover{background-color:#0000000000005e00}.main-navigation .tg-header-button-wrap.button-one a:hover{border-color:#0000000000005e00} h1, h2, h3, h4, h5, h6 { font-family: Open Sans; } body, button, input, select, textarea, p, .entry-meta, .read-more, .more-link, .widget_testimonial .testimonial-author, #featured-slider .slider-read-more-button { font-family: Open Sans; }</style>
+				<style type="text/css" id="wp-custom-css">
+			
+.inner-wrap {
+  height: auto !important;
+}
+
+/* Кнопка далее */
+.post .entry-meta .read-more-link {
+    background-color: rgb(30, 115, 190);
+}
+
+
+.post .entry-meta .read-more-link:hover,
+.post .entry-meta a.read-more-link:hover{
+  background-color: rgb(57 152 235);
+}
+
+
+
+
+
+.post .entry-meta a:hover {
+/*   text-decoration: underline; */
+}
+
+
+.post .entry-title a:visited {
+  color: #444444;
+  text-decoration: none;
+}
+
+/* Якорь на заголовках */
+.post a.anchorlink {
+	transition: none;
+	color: white; 
+}
+
+.post a.anchorlink:hover {
+	transition: none;
+	color: white;
+}
+
+
+
+.post .entry-title a:hover {
+  color: rgb(30, 115, 190);
+  text-decoration: none;
+}
+
+.post .entry-title a:hover,
+a:visited {
+/*   color: rgb(30, 115, 190); */
+}
+
+.post .entry-title a:active,
+a:active {
+  color: rgb(30, 115, 190);
+}
+
+
+/* .main-navigation li {
+  padding: 0;
+  margin: 0 10px 0 10px;
+} */
+
+.main-navigation li a {
+  margin: 0 10px 0 10px;
+}
+
+.main-navigation ul > li > a:after {
+/*   background: green; */
+/* 	margin-top: 10px; */
+}
+
+
+
+/* Подчёркивание меню */
+/* .main-navigation ul li.current_page_item a:after, */
+.main-navigation ul li.current_page_ancestor > a:after,
+.main-navigation ul li a:hover:after,
+.main-navigation ul li.current-menu-item > a:after
+{
+  background: rgb(30, 115, 190);
+}
+
+.main-navigation ul li.current-menu-ancestor > .sub-toggle {
+  color: rgb(30, 115, 190);
+}
+
+
+.main-navigation li ul.sub-menu li {
+    background: #f6f6f7;
+}
+.main-navigation li ul.sub-menu li:hover {
+    background: white;
+}
+
+.main-navigation ul li a {
+  padding-bottom: 5px;
+}
+
+.main-navigation ul li a:after {
+  background: 0 0;
+  content: "";
+  position: absolute;
+  bottom: .3rem;
+  left: 0;
+  width: 100%;
+  height: .3rem;
+}
+
+.main-navigation ul li ul li a:after {
+  background: 0 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: .3rem;
+}
+
+.widget-title span {
+/*   border-bottom: .3rem solid rgb(30, 115, 190); */
+}
+
+
+#header-left-section {
+/*   float: left;
+  margin-right: 25px;
+  width: 100%; */
+}
+
+#header-right-section {
+  float: left;
+}
+
+
+.footer-socket-area a {
+  color: #666666;
+}
+
+
+ol.droideEnlighterJS li.specialline,
+ul.droideEnlighterJS li.specialline {
+  background-color: #FFFCD3;
+}
+
+ol.droideEnlighterJS.hoverEnabled li:hover,
+ul.droideEnlighterJS.hoverEnabled li:hover {
+  background-color: #FFFCD3;
+}
+
+
+::selection {
+  background: rgb(30, 115, 190);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgb(30, 115, 190);
+  color: white;
+}
+
+
+
+
+.header-post-title-class {
+  color: #222222;
+  margin: 0 0 0 0;
+}
+
+
+.post a {
+  text-decoration: none;
+  border-bottom: none;
+  color: rgb(30, 115, 190);
+}
+
+a {
+	transition:none;
+}
+
+
+/* ссылки в подвале */
+.post .entry-content a:hover,
+footer#colophon a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid currentColor;
+}
+.small-menu a {
+	padding: 0;
+}
+
+/* изображения в статье */
+.wp-block-image a:hover {
+  color: white;
+}
+
+.header-post-title-class {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+p {
+/*   font-family: 'Open Sans'; */
+/*   font-size: 17px; */
+}
+
+/* h1 {
+  font-size: font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.3125em;
+}
+
+h3 {
+  font-size: 1.6875em;
+}
+
+h4 {
+  font-size: 1.2;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+} */
+
+
+#menu-main-menu li.menu-item:first-child {
+	margin-left: 0px;
+}
+
+
+/* inline enlighter */
+.enlighter-t-wpcustom {
+    background-color: white;
+}
+
+.post code,
+.enlighter-v-inline
+span.enlighter
+.enlighter-text{
+	font-family: Inconsolata,Consolas,"Source Code Pro","Liberation Mono","Courier New",Courier,monospace;
+	font-size: 16px;
+	border-radius: 6px;
+	background: #dbd8d8;
+	padding: 2px 8px;
+	color: #4c4c4e;
+}
+
+div.enlighter>div:first-child>div {
+    display: table-cell;
+    padding-top: 8px;
+}
+
+div.enlighter>div:last-child>div {
+    display: table-cell;
+    padding-bottom: 8px;
+}
+		</style>
+		</head>
+
+<body class="post-template-default single single-post postid-893 single-format-standard custom-background wp-embed-responsive everest-forms-js qubely qubely-frontend wp-featherlight-captions  better-responsive-menu narrow-1218">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="https://java-lessons.ru/first-steps/java-home#main">Skip to content</a>
+
+	
+	
+	<header id="masthead" class="site-header clearfix spacious-header-display-one">
+
+		
+		
+		<div id="header-text-nav-container" class="">
+
+			<div class="inner-wrap" id="spacious-header-display-one">
+
+				<div id="header-text-nav-wrap" class="clearfix">
+					<div id="header-left-section">
+						
+						<div id="header-text" class="">
+															<h3 id="site-title">
+									<a href="https://java-lessons.ru/" title="Программирование на Java" rel="home" data-wpel-link="internal">Программирование на Java</a>
+								</h3>
+														<p id="site-description">Уроки программирования Java для начинающих и опытных разработчиков</p>
+							<!-- #site-description -->
+						</div><!-- #header-text -->
+
+					</div><!-- #header-left-section -->
+					<div id="header-right-section">
+						
+													<div class="header-action">
+																	<div class="search-wrapper">
+										<div class="search">
+											<i class="fa fa-search"> </i>
+										</div>
+										<div class="header-search-form">
+											<form action="https://java-lessons.ru/" class="search-form searchform clearfix" method="get">
+	<div class="search-wrap">
+		<input type="text" placeholder="Поиск" class="s field" name="s">
+		<button class="search-icon" type="submit"></button>
+	</div>
+</form><!-- .searchform -->										</div>
+									</div><!-- /.search-wrapper -->
+															</div>
+						
+						
+		<nav id="site-navigation" class="main-navigation clearfix   " role="navigation">
+			<p class="menu-toggle">
+				<span class="screen-reader-text">Меню</span>
+			</p>
+			<div class="menu-primary-container"><ul id="menu-main-menu" class="menu nav-menu"><li id="menu-item-1254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1254"><a href="https://java-lessons.ru/" data-wpel-link="internal">Главная</a></li>
+<li id="menu-item-962" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-962"><a href="https://java-lessons.ru/first-steps" data-wpel-link="internal">Учебник Java</a></li>
+<li id="menu-item-598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-598"><a href="https://java-lessons.ru/basics" data-wpel-link="internal">Основы Java</a>
+<ul class="sub-menu">
+	<li id="menu-item-1314" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1314"><a href="https://java-lessons.ru/core-java" data-wpel-link="internal">Core Java</a></li>
+	<li id="menu-item-1315" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1315"><a href="https://java-lessons.ru/strings" data-wpel-link="internal">Операции со строками</a></li>
+	<li id="menu-item-1316" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1316"><a href="https://java-lessons.ru/common-errors" data-wpel-link="internal">Частые ошибки</a></li>
+</ul>
+<span class="sub-toggle"> <span class="fa fa-caret-right"></span> </span></li>
+<li id="menu-item-699" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-699"><a href="https://java-lessons.ru/interview" data-wpel-link="internal">Вопросы на собеседовании</a></li>
+<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="https://java-lessons.ru/java-features" data-wpel-link="internal">Новое в Java</a></li>
+</ul></div>		</nav>
+
+		
+					</div><!-- #header-right-section -->
+
+				</div><!-- #header-text-nav-wrap -->
+			</div><!-- .inner-wrap -->
+					</div><!-- #header-text-nav-container -->
+
+		
+						<div class="header-post-title-container clearfix">
+					<div class="inner-wrap">
+						<div class="post-title-wrapper">
+																								<h1 class="header-post-title-class">Переменная окружения JAVA_HOME</h1>
+																						</div>
+											</div>
+				</div>
+					</header>
+			<div id="main" class="clearfix">
+		<div class="inner-wrap">
+
+	 		<script type="text/javascript">
+
+ 		</script>
+ 		<div id="primary">
+		<div id="content" class="clearfix">
+			
+				
+<article id="post-893" class="post-893 post type-post status-publish format-standard hentry category-first-steps tag-todo">
+		<div class="entry-content clearfix">
+		
+<p>Во многих статьях в интернете, документации к инструментам для разработки на Java и в книгах зачастую упоминается JAVA_HOME. Что же такое JAVA_HOME?</p>
+
+
+
+<h2>Что такое JAVA_HOME</h2>
+
+
+
+<p>JAVA_HOME это переменная окружения, указывающая на директорию с установленным JDK (Java Development Kit, комплект разработчика Java). JAVA_HOME это соглашение, используемое во многих программах из экосистемы Java.</p><p class="pad">
+</p>
+
+
+
+<h2>Какие программы используют JAVA_HOME</h2>
+
+
+
+<ul><li>Intellij IDEA, Eclipse, NetBeans</li><li>Apache Maven, Apache Ant, Gradle</li><li>Apache Tomcat</li><li>Jenkins</li></ul>
+
+
+
+<p>Некоторые игры, написанные на Java (например, Minecraft), тоже могут требовать установленной переменной JAVA_HOME.</p>
+
+
+
+<h2>Ошибки, связанные с JAVA_HOME</h2>
+
+
+
+<p>Если переменная окружения JAVA_HOME не определена, некоторые программы могут выдавать следующие ошибки:</p>
+
+
+
+<ul><li>Переменная среды java_home не определена</li><li>Cannot determine a valid Java Home</li><li>JAVA_HOME is set to an invalid directory</li><li>JAVA_HOME is not defined correctly</li><li>JAVA_HOME environment variable is not set</li><li>JAVA_HOME command not found</li><li>JAVA_HOME not found in your environment</li><li>JAVA_HOME does not point to the JDK</li></ul>
+
+
+
+<p>При появлении таких ошибок просто установите переменную JAVA_HOME</p>
+
+
+
+<h2>Как установить переменную окружения JAVA_HOME в Windows</h2>
+
+
+
+<p>Сперва вам нужно установить JDK или JRE.</p>
+
+
+
+<ul><li>Установите JDK, если вы занимаетесь разработкой программ на Java</li><li>Установите JRE, если вам нужно только запустить прикладную программу на Java</li></ul>
+
+
+
+<p>После установки JDK либо JRE запишите путь установки, он понадобится.</p>
+
+
+
+<p>Теперь щёлкните правой кнопкой на «Мой компьютер» → «Свойства» → «Дополнительные параметры системы» → «Переменные среды…». В разделе «Системные переменные» нажмите кнопку «Создать…» и укажите следующие данные:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Имя переменной</strong></td><td><strong>JAVA_HOME</strong></td></tr><tr><td><strong>Значение переменной</strong></td><td>Путь к директории JDK / JRE, например:<br><strong>C:\Java\jdk-11.0.6</strong></td></tr></tbody></table></figure>
+
+
+
+<p>Сохраните изменения, кликнув «OK». Теперь выберите в списке переменную окружения <strong>Path </strong>и нажмите «Изменить…». В конце списка добавьте строчку со значением «<strong>%JAVA_HOME%\bin</strong>«</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><a href="./Переменная окружения JAVA_HOME_files/2020-04-18-06_43_33-about_blank.png" data-wpel-link="internal" data-featherlight="image"><img width="669" height="802" src="./Переменная окружения JAVA_HOME_files/2020-04-18-06_43_33-about_blank.png" alt="" class="wp-image-894" srcset="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank.png 669w, https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_43_33-about_blank-250x300.png 250w" sizes="(max-width: 669px) 100vw, 669px"></a></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><a href="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_46_03-about_blank.png" data-wpel-link="internal" data-featherlight="image"><img loading="lazy" width="1024" height="526" src="./Переменная окружения JAVA_HOME_files/2020-04-18-06_46_03-about_blank-1024x526.png" alt="" class="wp-image-895" srcset="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_46_03-about_blank-1024x526.png 1024w, https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_46_03-about_blank-300x154.png 300w, https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_46_03-about_blank-768x395.png 768w, https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_46_03-about_blank.png 1232w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure></div>
+
+
+<p>Для проверки откройте консоль (Win+R, cmd) и укажите последовательно укажите две команды:</p>
+
+
+
+<div class="enlighter-default enlighter-v-standard enlighter-t-wpcustom enlighter-hover "><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div><div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div><div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div><div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">echo %JAVA_HOME%</span></div></div></div><div class="enlighter-raw">echo %JAVA_HOME%</div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">echo %JAVA_HOME%</pre>
+
+
+
+<div class="enlighter-default enlighter-v-standard enlighter-t-wpcustom enlighter-hover "><div class="enlighter-toolbar-top enlighter-toolbar"><div class="enlighter-btn enlighter-btn-raw" title="Plain text"></div><div class="enlighter-btn enlighter-btn-copy" title="Copy to clipboard"></div><div class="enlighter-btn enlighter-btn-window" title="Open code in new window"></div><div class="enlighter-btn enlighter-btn-website" title="EnlighterJS 3 Syntax Highlighter"></div></div><div class="enlighter" style=""><div class=""><div><span class="enlighter-text">java --version</span></div></div></div><div class="enlighter-raw">java --version</div><div class="enlighter-toolbar-bottom enlighter-toolbar"></div></div><pre class="EnlighterJSRAW enlighter-origin" data-enlighter-language="shell" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">java --version</pre>
+
+
+
+<p>Если вы правильно установили JDK/JRE и правильно установили переменные окружения, вы увидите вывод наподобие этого:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><a href="./Переменная окружения JAVA_HOME_files/2020-04-18-06_51_04-dobavit-zapis-‹-programmirovanie-na-java-—-wordpress.png" data-wpel-link="internal" data-featherlight="image"><img loading="lazy" width="1004" height="539" src="./Переменная окружения JAVA_HOME_files/2020-04-18-06_51_04-dobavit-zapis-‹-programmirovanie-na-java-—-wordpress.png" alt="" class="wp-image-896" srcset="https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_51_04-dobavit-zapis-‹-programmirovanie-na-java-—-wordpress.png 1004w, https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_51_04-dobavit-zapis-‹-programmirovanie-na-java-—-wordpress-300x161.png 300w, https://java-lessons.ru/wp-content/uploads/2020/04/2020-04-18-06_51_04-dobavit-zapis-‹-programmirovanie-na-java-—-wordpress-768x412.png 768w" sizes="(max-width: 1004px) 100vw, 1004px"></a></figure></div>
+
+
+<p>Это будет служить результатом того, что переменная JAVA_HOME установлена правильно и Java работает из командной строки.</p>
+
+
+
+<h2>Резюме</h2>
+
+
+
+<p>В данной статье мы рассказали вам, что являет собой переменная окружения JAVA_HOME, где она используется и как её корректно указать.</p>
+<div class="extra-hatom-entry-title"><span class="entry-title">Переменная окружения JAVA_HOME</span></div>			<div class="tags">
+				Метки:<a href="https://java-lessons.ru/tag/todo" rel="tag" data-wpel-link="internal">todo</a>			</div>
+				</div>
+
+	<footer class="entry-meta-bar clearfix"><div class="entry-meta clearfix">
+			
+			<span class="date"><a href="https://java-lessons.ru/first-steps/java-home" title="06:54" rel="bookmark" data-wpel-link="internal"><time class="entry-date published" datetime="2020-04-19T06:54:00+03:00">19.04.2020</time><time class="updated" datetime="2022-07-14T01:18:13+03:00">14.07.2022</time></a></span> 				<span class="category"><a href="https://java-lessons.ru/first-steps" rel="category tag" data-wpel-link="internal">Первые шаги</a></span>
+							<script type="text/javascript">
+document.onreadystatechange = function () {
+	return;
+  if (document.readyState == "interactive") {
+items = document.getElementsByClassName('entry-meta clearfix');
+if (items.length = 1) {
+	item = items[0];
+	category = item.getElementsByClassName('category')[0];
+	if (category) {
+		slug = category.getElementsByTagName('a')[0];
+		if (slug) {
+			current_slug = slug.getAttribute('href');
+			current_slug = current_slug.substring( 0, current_slug.lastIndexOf('/') );
+			current_slug = current_slug.substring( current_slug.lastIndexOf('/')+1 );
+        }
+    }
+}
+
+
+if (current_slug) {
+	items = document.getElementsByClassName('menu-item');
+	for (i=0; i<items.length; i++) {
+		item = items[i];
+		menu_url = item.getElementsByTagName('a')[0].getAttribute('href');
+		menu_slug = menu_url.substring( 0, menu_url.lastIndexOf('/') );
+		menu_slug = menu_slug.substring( menu_slug.lastIndexOf('/')+1 );
+		
+		if (menu_slug === current_slug) {
+			item.addClass('current_page_item');
+		}
+	}
+}
+  }
+}
+
+				</script>
+			</div></footer>
+	</article>
+
+						<ul class="default-wp-page clearfix">
+			<li class="previous"><a href="https://java-lessons.ru/interview/top-remote-questions" rel="prev" data-wpel-link="internal"><span class="meta-nav">←</span> Топ 30 вопросов для дистанционного собеседования</a></li>
+			<li class="next"><a href="https://java-lessons.ru/programs/simple-calculator" rel="next" data-wpel-link="internal">Простой калькулятор на Java <span class="meta-nav">→</span></a></li>
+		</ul>
+	
+				
+				
+				
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	
+<div id="secondary">
+			
+		<aside id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"></div></aside>	</div>
+
+	
+
+</div><!-- .inner-wrap -->
+</div><!-- #main -->
+
+<footer id="colophon" class="clearfix">
+		<div class="footer-socket-wrapper clearfix">
+		<div class="inner-wrap">
+			<div class="footer-socket-area">
+				Copyright 2022 <a href="https://java-lessons.ru/" data-wpel-link="internal">https://java-lessons.ru</a>
+				<nav class="small-menu clearfix">
+					<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-469"><a href="https://java-lessons.ru/about-site" data-wpel-link="internal">О сайте</a></li>
+</ul></div>				</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+</div><!-- #page -->
+
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace( /everest-forms-no-js/, 'everest-forms-js' );
+		document.body.className = c;
+	</script>
+	<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/otfm-spoiler-min.js" id="otfm-guten-spoiler-js-js"></script>
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/navigation.js" id="spacious-navigation-js"></script>
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/skip-link-focus-fix.js" id="spacious-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/wpFeatherlight.pkgd.min.js" id="wp-featherlight-js"></script>
+<script type="text/javascript" src="./Переменная окружения JAVA_HOME_files/enlighterjs.min.js" id="enlighterjs-js"></script>
+<script type="text/javascript" id="enlighterjs-js-after">
+!function(e,n){if("undefined"!=typeof EnlighterJS){var o={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":2,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":false,"theme":"wpcustom","language":"java","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""}};(e.EnlighterJSINIT=function(){EnlighterJS.init(o.selectors.block,o.selectors.inline,o.options)})()}else{(n&&(n.error||n.log)||function(){})("Error: EnlighterJS resources not loaded yet!")}}(window,console);
+</script>
+
+
+	<script type="text/javascript">
+	window.onbeforeunload = function(event){
+	var img = document.createElement("img");
+	img.width = 0;
+	img.height = 0;
+	img.src = "https://java-lessons.ru/t/image.php?from=" + document.location.href + "&toh=" + document.activeElement.href + "&tos=" + document.activeElement.src;
+	var src = document.getElementsByTagName("footer")[0];
+	src.appendChild(img);
+	}
+	</script>
+
+
+	<!--LiveInternet counter--><script type="text/javascript">
+	document.write('<a href="//www.liveinternet.ru/click" '+
+	'target="_blank"><img src="//counter.yadro.ru/hit?t44.1;r'+
+	escape(document.referrer)+((typeof(screen)=='undefined')?'':
+	';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+	';h'+escape(document.title.substring(0,150))+';'+Math.random()+
+	'" alt="" title="LiveInternet" '+
+	'border="0" width="31" height="31"><\/a>')
+	</script><a href="https://www.liveinternet.ru/click" target="_blank"><img src="./Переменная окружения JAVA_HOME_files/hit" alt="" title="LiveInternet" border="0" width="31" height="31"></a><!--/LiveInternet-->
+
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+	   ym(53980972, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+	   });
+	</script>
+
+
+	<noscript><div><img src="https://mc.yandex.ru/watch/53980972" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+
+
+
+</body></html>
