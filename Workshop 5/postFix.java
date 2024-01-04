@@ -4,11 +4,39 @@
  * Написать программу на Java вычисляющую значение сложного арифметического выражения. Для простоты - выражение всегда вычисляемое
  * Пример: (2^3 * (10 / (5 - 3)))^(Sin(Pi)) ответ - 1
  */
+import java.util.*;
 
-import java.util.Stack;
+interface MathFunction {
+    double apply(double arg);
+}
 
-public class InfixToPostfix {
-    
+public class Calculator {
+
+    private static final Map<String, MathFunction> FUNCTIONS = Map.of(
+            "sin", Math::sin,
+            "cos", Math::cos,
+            "tan", Math::tan
+    );
+
+    public static void main(String[] args) {
+        String infixExpression = "(2^3 * (10 / (5 - 3)))^(sin(0))";
+
+        try {
+            String postfixExpression = infixToPostfix(infixExpression);
+            System.out.println("Infix: " + infixExpression);
+            System.out.println("Postfix: " + postfixExpression);
+
+            double result = evaluatePostfix(postfixExpression);
+            System.out.println("Result: " + result);
+        } catch (IllegalArgumentException | ArithmeticException e) {
+            System.err.println("Error: " + e.getMessage());
+        }
+    }
+
+    private static boolean isOperator(char ch) {
+        return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^';
+    }
+
     private static int getPrecedence(char operator) {
         switch (operator) {
             case '+':
@@ -24,64 +52,126 @@ public class InfixToPostfix {
         }
     }
 
-    public static String infixToPostfix(String infix) {
-        StringBuilder postfix = new StringBuilder();
-        Stack<Character> stack = new Stack<>();
+    private static boolean isFunction(String token) {
+        return FUNCTIONS.containsKey(token.toLowerCase());
+    }
 
-        for (char ch : infix.toCharArray()) {
-            if (Character.isLetterOrDigit(ch)) {
-                postfix.append(ch);
-            } else if (ch == '(') {
-                stack.push(ch);
-            } else if (ch == ')') {
-                while (!stack.isEmpty() && stack.peek() != '(') {
-                    postfix.append(stack.pop());
-                }
-                if (!stack.isEmpty() && stack.peek() == '(') {
-                    stack.pop(); // Discard the '('
-                }
+    private static List<String> tokenize(String expression) {
+        List<String> tokens = new ArrayList<>();
+        StringBuilder token = new StringBuilder();
+
+        for (char ch : expression.toCharArray()) {
+            if (Character.isLetterOrDigit(ch) || ch == '.') {
+                token.append(ch);
+            } else if (ch == '(' || ch == ')' || isOperator(ch)) {
+                processToken(tokens, token);
+                tokens.add(String.valueOf(ch));
+            } else if (ch == ' ') {
+                processToken(tokens, token);
             } else {
-                while (!stack.isEmpty() && getPrecedence(ch) <= getPrecedence(stack.peek())) {
-                    postfix.append(stack.pop());
+                throw new IllegalArgumentException("Invalid character in expression: " + ch);
+            }
+        }
+
+        processToken(tokens, token);
+
+        return tokens;
+    }
+
+    private static void processToken(List<String> tokens, StringBuilder token) {
+        if (token.length() > 0) {
+            tokens.add(token.toString());
+            token.setLength(0);
+        }
+    }
+
+    public static String infixToPostfix(String infix) {
+        List<String> tokens = tokenize(infix);
+        Stack<String> stack = new Stack<>();
+        StringBuilder postfix = new StringBuilder();
+
+        for (String token : tokens) {
+            if (token.isEmpty()) {
+                continue;
+            }
+
+            if (Character.isDigit(token.charAt(0)) || Character.isLetter(token.charAt(0))) {
+                postfix.append(token).append(" ");
+            } else if (isFunction(token)) {
+                stack.push(token);
+            } else if (isOperator(token.charAt(0))) {
+                while (!stack.isEmpty() && isOperator(stack.peek().charAt(0)) &&
+                        getPrecedence(token.charAt(0)) <= getPrecedence(stack.peek().charAt(0))) {
+                    postfix.append(stack.pop()).append(" ");
                 }
-                stack.push(ch);
+                stack.push(token);
+            } else if (token.equals("(")) {
+                stack.push(token);
+            } else if (token.equals(")")) {
+                while (!stack.isEmpty() && !stack.peek().equals("(")) {
+                    postfix.append(stack.pop()).append(" ");
+                }
+                if (!stack.isEmpty() && stack.peek().equals("(")) {
+                    stack.pop();  // Discard the '('
+                } else {
+                    throw new IllegalArgumentException("Mismatched parentheses");
+                }
             }
         }
 
         while (!stack.isEmpty()) {
-            postfix.append(stack.pop());
+            if (stack.peek().equals("(")) {
+                throw new IllegalArgumentException("Mismatched parentheses");
+            }
+            postfix.append(stack.pop()).append(" ");
         }
 
-        return postfix.toString();
+        return postfix.toString().trim();
     }
 
     public static double evaluatePostfix(String postfix) {
         Stack<Double> stack = new Stack<>();
+        String[] tokens = postfix.split("\\s+");
 
-        for (char ch : postfix.toCharArray()) {
-            if (Character.isLetterOrDigit(ch)) {
-                stack.push((double) (ch - '0'));
-            } else {
+        for (String token : tokens) {
+            if (token.isEmpty()) {
+                continue;
+            }
+
+            if (Character.isDigit(token.charAt(0))) {
+                stack.push(Double.parseDouble(token));
+            } else if (isFunction(token)) {
+                if (stack.size() < 1) {
+                    throw new IllegalArgumentException("Invalid expression");
+                }
+                double arg = stack.pop();
+                MathFunction function = FUNCTIONS.get(token.toLowerCase());
+                double result = function.apply(arg);
+                stack.push(result);
+            } else if (isOperator(token.charAt(0))) {
+                if (stack.size() < 2) {
+                    throw new IllegalArgumentException("Invalid expression");
+                }
                 double operand2 = stack.pop();
                 double operand1 = stack.pop();
 
-                switch (ch) {
-                    case '+':
+                switch (token) {
+                    case "+":
                         stack.push(operand1 + operand2);
                         break;
-                    case '-':
+                    case "-":
                         stack.push(operand1 - operand2);
                         break;
-                    case '*':
+                    case "*":
                         stack.push(operand1 * operand2);
                         break;
-                    case '/':
+                    case "/":
                         if (operand2 == 0) {
                             throw new ArithmeticException("Division by zero");
                         }
                         stack.push(operand1 / operand2);
                         break;
-                    case '^':
+                    case "^":
                         stack.push(Math.pow(operand1, operand2));
                         break;
                 }
@@ -94,14 +184,5 @@ public class InfixToPostfix {
 
         return stack.pop();
     }
-
-    public static void main(String[] args) {
-        String infixExpression = "(2^3*(10/(5-3)))^(Math.sin(Math.PI))";
-        String postfixExpression = infixToPostfix(infixExpression);
-        System.out.println("Infix: " + infixExpression);
-        System.out.println("Postfix: " + postfixExpression);
-
-        double result = evaluatePostfix(postfixExpression);
-        System.out.println("Result: " + result);
-    }
 }
+
